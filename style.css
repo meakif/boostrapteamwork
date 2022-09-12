@@ -1,38 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+#menu {
+  padding: 0 3rem;
+  margin: 0.5rem;
+}
+
 .banner {
-  background: url("./img/banner.jpeg")
-    no-repeat center center;
+  background-image: url("./img/banner.jpeg");
+  background-position: center;
   background-size: cover;
-  padding-top: 20%;
-  padding-bottom: 20%;
+  padding: 20%;
   color: purple;
   height: 100vh;
 }
 
-.circle {
-  display: inline-block;
-  border-radius: 50%;
-  width: 150px;
-  margin: auto;
-  height: 150px;
-  color: #fff;
+.contact {
+  background-image: url("./img/map.jpeg");
+}
+
+.btn {
+  padding: 8px 16px;
+}
+
+.rounded {
+  color: white;
+  padding: 25px;
   background-color: #dc3545;
+  height: 150px;
+  width: 150px;
+  border-radius: 50% !important;
 }
-
-.circle i {
-  position: relative;
-  top: 30px;
-}
-
-.product-img {
-  object-fit: cover;
-}
-
-.team img {
+.staff img {
   width: 250px;
   border: 10px solid #cccccc;
 }
-
-a.social {
+.rounded-social {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -40,18 +44,4 @@ a.social {
   border-radius: 50%;
   background-color: #333;
   line-height: 40px;
-}
-
-.client img {
-  height: auto;
-  max-height: 50px;
-}
-
-.contact{
-  background: url("./img/map.jpeg") no-repeat
-    center center;
-  background-size: cover;
-  padding-bottom: 20%;
-  padding-top: 20%;
-  color: #eee;
 }
